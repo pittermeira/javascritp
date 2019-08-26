@@ -45,4 +45,5 @@ function exe2(){
     alert('Media Salarial: '+somaSalario/prefeitura.length)
     alert('media de filhos '+ somaFilhos/prefeitura.length)
     alert('Maior Salario '+ Msalario)
+    alert('Percentual '+ qtde/3*100);
 }
