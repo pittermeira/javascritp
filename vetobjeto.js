@@ -32,14 +32,17 @@ function exe2(){
    let somaSalario=0
    let somaFilhos=0
    let Msalario = prefeitura[0].salario
+   let qtde=0
    for(let i=0;i<3;i++){
     soma=soma + prefeitura[i].salario
     somaSalario=somaFilhos+prefeitura[i].filhos
     somaFilhos=somaSalario+prefeitura[i].salario
         if (prefeitura[0].salario > Msalario)
              Msalario=prefeitura[i].salario
+        if((prefeitura[i].sexo == 'F')&&(prefeitur[i].salario > 1000))
+            qtde++;
+     }
     alert('Media Salarial: '+somaSalario/prefeitura.length)
-    alert(' ')
-    alert()
-   }
+    alert('media de filhos '+ somaFilhos/prefeitura.length)
+    alert('Maior Salario '+ Msalario)
 }
