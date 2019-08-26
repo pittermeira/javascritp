@@ -17,3 +17,29 @@ function funcao(){
     }
     alert('Quantidade em estoque: ' + estoque)
 }
+
+function exe2(){
+    let prefeitura = []
+    let soma
+    let media
+   for(i=0;i<3;i++){
+       let objeto = {}
+        objeto.salario = Number(prompt('Salario da população: '))
+        objeto.filhos = Number(prompt('quantidade de filhos: '))
+        objeto.sexo= (prompt('Sexo, M:Masculino e F:Feminino: '))
+        prefeitura.push(objeto)
+   }
+   let somaSalario=0
+   let somaFilhos=0
+   let Msalario = prefeitura[0].salario
+   for(let i=0;i<3;i++){
+    soma=soma + prefeitura[i].salario
+    somaSalario=somaFilhos+prefeitura[i].filhos
+    somaFilhos=somaSalario+prefeitura[i].salario
+        if (prefeitura[0].salario > Msalario)
+             Msalario=prefeitura[i].salario
+    alert('Media Salarial: '+somaSalario/prefeitura.length)
+    alert(' ')
+    alert()
+   }
+}
